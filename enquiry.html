@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enquiry — Community Food Bank</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="site-title">
+        <img src="images/volunteers.jpg" alt="Community volunteers">
+        <h1>Community Food Bank</h1>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="enquiry.html">Enquiry</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main" role="main">
+    <h2>Enquiry & Signup</h2>
+    <p>Please use the form below to enquire about services, volunteer, or donate.</p>
+
+    <!-- NOTE: form is front-end only. For submission use a backend or form service -->
+    <form class="contact-form" aria-label="Enquiry form">
+      <!-- left column -->
+      <div>
+        <label for="fname">First name</label>
+        <input id="fname" name="fname" type="text" placeholder="Your first name" required>
+      </div>
+
+      <div>
+        <label for="lname">Last name</label>
+        <input id="lname" name="lname" type="text" placeholder="Your last name" required>
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="+27 11 123 4567" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+      </div>
+
+      <div class="full">
+        <label for="type">I am enquiring about</label>
+        <select id="type" name="type">
+          <option>Request food assistance</option>
+          <option>Volunteer</option>
+          <option>Donate goods</option>
+          <option>Sponsor / Partner</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="full">
+        <label for="message">Message / Details</label>
+        <textarea id="message" name="message" placeholder="Tell us about your request or how you'd like to help"></textarea>
+      </div>
+
+      <div class="full">
+        <button type="submit">Send Enquiry (demo)</button>
+        <p class="small"> </p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2025 Community Food Bank</div>
+      <div><a href="contact.html" style="color:white; text-decoration:underline;">Contact details</a></div>
+    </div>
+  </footer>
+</body>
+</html>
+    

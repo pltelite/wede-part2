@@ -1,0 +1,121 @@
+/* ================================
+   Community Food Bank Stylesheet
+   Author: Phomolo Telite.
+   Date: 2025
+   ================================ */
+
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BASE STYLES ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: #2E8B57; /* green for community vibe */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #1e5a39;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #2E8B57;
+    border-radius: 4px;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    color: #2E8B57;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+main p, main li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* ---------- SERVICES LIST ---------- */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    main h2 {
+        font-size: 1.4rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
